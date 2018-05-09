@@ -2,12 +2,13 @@
 #define TEST_IMREAD_H
 
 #include <QWidget>
-
-class Test_imread : public QWidget
+#include <QMessageBox>
+class Test_imread : public QMessageBox
 {
     Q_OBJECT
 public:
-    explicit Test_imread(QWidget *parent = nullptr);
+    explicit Test_imread(QWidget *parent = 0);
+    Test_imread(QString imgLoc);
 
 signals:
 

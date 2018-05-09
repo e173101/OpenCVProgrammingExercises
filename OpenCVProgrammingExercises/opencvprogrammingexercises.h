@@ -15,6 +15,9 @@ public:
     explicit OpenCVProgrammingExercises(QWidget *parent = 0);
     ~OpenCVProgrammingExercises();
 
+private slots:
+    void on_pushButton_imread_clicked();
+
 private:
     Ui::OpenCVProgrammingExercises *ui;
 };

@@ -25,10 +25,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        opencvprogrammingexercises.cpp
+        opencvprogrammingexercises.cpp \
+    test_imread.cpp
 
 HEADERS += \
-        opencvprogrammingexercises.h
+        opencvprogrammingexercises.h \
+    test_imread.h
 
 FORMS += \
         opencvprogrammingexercises.ui
+
+
+#OpenCV
+INCLUDEPATH += C:/OpenCV/2.4.13/include
+LIBS += C:/OpenCV/2.4.13/lib/*.dll.a
+
