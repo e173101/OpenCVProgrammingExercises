@@ -3,6 +3,12 @@
 
 #include <QMainWindow>
 
+#include <QtGui>
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+
+using namespace cv;
+
 namespace Ui {
 class OpenCVProgrammingExercises;
 }
@@ -20,6 +26,8 @@ private slots:
 
 private:
     Ui::OpenCVProgrammingExercises *ui;
+    Mat mat;                //origin mat
+    Mat matA, matB, matC;   //temp mat
 };
 
 #endif // OPENCVPROGRAMMINGEXERCISES_H

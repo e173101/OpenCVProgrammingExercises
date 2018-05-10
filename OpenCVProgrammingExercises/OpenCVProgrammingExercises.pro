@@ -25,12 +25,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        opencvprogrammingexercises.cpp \
-    test_imread.cpp
+        opencvprogrammingexercises.cpp
 
 HEADERS += \
-        opencvprogrammingexercises.h \
-    test_imread.h
+        opencvprogrammingexercises.h
 
 FORMS += \
         opencvprogrammingexercises.ui
