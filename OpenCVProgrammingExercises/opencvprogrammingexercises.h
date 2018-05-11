@@ -24,6 +24,10 @@ public:
 private slots:
     void on_pushButton_imread_clicked();
 
+    void on_action_getPixelValue_triggered();
+
+    void on_action_colorReduce_triggered();
+
 private:
     Ui::OpenCVProgrammingExercises *ui;
     Mat mat;                //origin mat

@@ -36,6 +36,14 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menupixel">
+    <property name="title">
+     <string>pixel</string>
+    </property>
+    <addaction name="action_getPixelValue"/>
+    <addaction name="action_colorReduce"/>
+   </widget>
+   <addaction name="menupixel"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -46,6 +54,16 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_getPixelValue">
+   <property name="text">
+    <string>(col,row)=?</string>
+   </property>
+  </action>
+  <action name="action_colorReduce">
+   <property name="text">
+    <string>color reduce</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
