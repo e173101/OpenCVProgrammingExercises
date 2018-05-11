@@ -98,3 +98,29 @@ void OpenCVProgrammingExercises::on_action_colorReduce_triggered()
     else
         ui->statusBar->showMessage("need mat",1000);
 }
+
+/*
+ * 4
+ * Traverse all pixel using the iterator
+ * 2018-5-11: begin
+ */
+void OpenCVProgrammingExercises::on_action_iterator_triggered()
+{
+    if(0!=mat.data)
+    {
+        Mat m=mat.clone();
+        Mat_<Vec3b>::iterator readIt,writeIt;
+        for(readIt=mat.begin<Vec3b>(),writeIt=m.begin<Vec3b>();
+            readIt!=mat.end<Vec3b>();
+            readIt++,writeIt++)
+        {
+            (*writeIt)[0]=(*readIt)[2];
+            (*writeIt)[1]=(*readIt)[0];
+            (*writeIt)[2]=(*readIt)[1];
+        }
+        imshow("reduced mat",m);
+    }
+    else
+        ui->statusBar->showMessage("need mat",1000);
+
+}

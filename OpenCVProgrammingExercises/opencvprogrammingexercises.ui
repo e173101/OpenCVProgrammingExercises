@@ -42,6 +42,7 @@
     </property>
     <addaction name="action_getPixelValue"/>
     <addaction name="action_colorReduce"/>
+    <addaction name="action_iterator"/>
    </widget>
    <addaction name="menupixel"/>
   </widget>
@@ -62,6 +63,11 @@
   <action name="action_colorReduce">
    <property name="text">
     <string>color reduce</string>
+   </property>
+  </action>
+  <action name="action_iterator">
+   <property name="text">
+    <string>iterator</string>
    </property>
   </action>
  </widget>

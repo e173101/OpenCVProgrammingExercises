@@ -28,6 +28,8 @@ private slots:
 
     void on_action_colorReduce_triggered();
 
+    void on_action_iterator_triggered();
+
 private:
     Ui::OpenCVProgrammingExercises *ui;
     Mat mat;                //origin mat
